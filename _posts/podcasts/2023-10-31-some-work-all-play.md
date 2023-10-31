@@ -8,6 +8,7 @@ language:
 tags:
   - subultra
   - ultra
+  - trail
 apple_podcast_link: 'https://podcasts.apple.com/us/podcast/some-work-all-play/id1521532868'
 spotify_link: 'https://open.spotify.com/show/3AaJYZngimocFf8aztKTcO?si=b5b831b841b44f29'
 patreon_link: 'https://www.patreon.com/swap/'

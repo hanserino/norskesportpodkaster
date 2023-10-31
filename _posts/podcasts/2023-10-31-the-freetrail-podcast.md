@@ -8,6 +8,10 @@ apple_podcast_link: >-
 language:
   - english
 publisher: Freetrail
+tags:
+  - ultra
+  - trail
+  - business
 description: >-
   Professional ultrarunner, Dylan Bowman, brings conversations with a
   wide-ranging cohort of guests, covering ultrarunning, sports, business, and

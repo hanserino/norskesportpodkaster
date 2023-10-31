@@ -13,5 +13,6 @@ language:
   - swedish
 tags:
   - ultra
+  - trail
 ---
 ![paceonearth.jpeg]({{site.baseurl}}/media/paceonearth.jpeg)
