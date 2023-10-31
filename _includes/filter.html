@@ -1,12 +1,29 @@
-<div id="filter">
-    <ul class="filters">
-        <li class="filters__item"><button class="filters__btn js-filter" data-category="all">All</button></li>
-        <li class="filters__item"><button class="filters__btn js-filter" data-category="trail">Trail</button></li>
-        <li class="filters__item"><button class="filters__btn js-filter" data-category="track">Track</button></li>
-        <li class="filters__item"><button class="filters__btn js-filter" data-category="ultra">Ultra</button></li>
-        <li class="filters__item"><button class="filters__btn js-filter" data-category="road">Road</button></li>
-        <li class="filters__item"><button class="filters__btn js-filter" data-category="subultra">Sub ultra</button></li>
-        <li class="filters__item"><button class="filters__btn js-filter" data-category="science">Science</button></li>
-        <li class="filters__item"><button class="filters__btn js-filter" data-category="business">Business</button></li>
-    </ul>
+<div class="filter" id="filter">
+    <h3 class="filter__title">Filter by:</h3>
+
+    <form>
+        <fieldset>
+            <legend>Category:</legend>
+            <div class="filter__checkboxes">
+                <label><input type="checkbox" id="trail" />Trail</label>
+                <label><input type="checkbox" id="track" />Track</label>
+                <label><input type="checkbox" id="ultra" />Ultra</label>
+                <label><input type="checkbox" id="road" />Road</label>
+                <label><input type="checkbox" id="subultra" />Sub ultra</label>
+                <label><input type="checkbox" id="science" />Science</label>
+                <label><input type="checkbox" id="business" />Business</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Language:</legend>
+            <div class="filter__checkboxes">
+                <label><input type="checkbox" id="english" />English</label>
+                <label><input type="checkbox" id="norwegian" />Norwegian</label>
+                <label><input type="checkbox" id="french" />French</label>
+                <label><input type="checkbox" id="spanish" />Spanish</label>
+                <label><input type="checkbox" id="polish" />Polish</label>
+            </div>
+        </fieldset>
+    </form>
 </div>

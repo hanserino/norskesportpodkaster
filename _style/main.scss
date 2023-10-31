@@ -35,6 +35,10 @@ html {
 body {
     transform-style: preserve-3d;
 }
+main {
+    max-width: 1280px;
+    margin: 0 auto;
+}
 
 @include allAbove(medium){
     

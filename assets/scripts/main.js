@@ -10,26 +10,35 @@ var isTouchDevice = function () {
     );
 };
 
-  
 
 function init(){}
 
-function filterPodcasts(category){
-   
-    if ( category == 'all' ) {
-        $( '.js-filterable' ).removeClass( 'is-hidden' ); 
-    } else {
-        $( '.js-filterable' ).addClass( 'is-hidden' );
-        $( '.js-filterable[data-category*=' + category + ']' ).removeClass( 'is-hidden' );
+$('.filter,.podcast-loop').delegate('input[type=checkbox]', 'change', function() {
+
+    var $filterItems = $('.podcast-loop__item'),
+        $checked = $('input:checked');
+
+    if ($checked.length) {							
+        var selector = '';
+        
+        $($checked).each(function(index, element){              
+            selector += "[data-category~='" + element.id + "']";
+        });
+
+        $filterItems.hide();    
+        $filterItems.filter(selector).show();
     }
-}
 
-$( '.js-filter' ).on( 'click', function() {
-    let $category = $(this).attr('data-category');
-    filterPodcasts($category);
+    else {
+        $filterItems.show();
+    }
+
+    if( $('.podcast-loop__item:visible').length >= 1) {
+        $('body').removeClass('no-podcasts');
+    } else {
+        $('body').addClass('no-podcasts');
+    }
 });
-
-
 
 
 window.onload = function () {

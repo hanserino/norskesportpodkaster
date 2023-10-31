@@ -11,46 +11,118 @@
 </head>
 
 <body>
-	<h1>Curated Running Podcasts | A hand picked selection of running related podcasts worth listening to</h1>
     <main>
-        <div id="filter">
-    <ul class="filters">
-        <li class="filters__item"><button class="filters__btn js-filter" data-category="all">All</button></li>
-        <li class="filters__item"><button class="filters__btn js-filter" data-category="trail">Trail</button></li>
-        <li class="filters__item"><button class="filters__btn js-filter" data-category="track">Track</button></li>
-        <li class="filters__item"><button class="filters__btn js-filter" data-category="ultra">Ultra</button></li>
-        <li class="filters__item"><button class="filters__btn js-filter" data-category="road">Road</button></li>
-        <li class="filters__item"><button class="filters__btn js-filter" data-category="subultra">Sub ultra</button></li>
-        <li class="filters__item"><button class="filters__btn js-filter" data-category="science">Science</button></li>
-        <li class="filters__item"><button class="filters__btn js-filter" data-category="business">Business</button></li>
-    </ul>
+        <header class="header">
+    <h1 class="header__title">Curated Running Podcasts</h1>
+    <p class="header__description">Hand picked selection of running related podcasts worth listening to.</p>
+    <a class="header__submit-btn" href="https://forms.gle/BqCkkiNqPaDiorCY9" target="_blank">Submit your favorite running podcast!</a>
+</header>
+
+        <div class="filter" id="filter">
+    <h3 class="filter__title">Filter by:</h3>
+
+    <form>
+        <fieldset>
+            <legend>Category:</legend>
+            <div class="filter__checkboxes">
+                <label><input type="checkbox" id="trail" />Trail</label>
+                <label><input type="checkbox" id="track" />Track</label>
+                <label><input type="checkbox" id="ultra" />Ultra</label>
+                <label><input type="checkbox" id="road" />Road</label>
+                <label><input type="checkbox" id="subultra" />Sub ultra</label>
+                <label><input type="checkbox" id="science" />Science</label>
+                <label><input type="checkbox" id="business" />Business</label>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Language:</legend>
+            <div class="filter__checkboxes">
+                <label><input type="checkbox" id="english" />English</label>
+                <label><input type="checkbox" id="norwegian" />Norwegian</label>
+                <label><input type="checkbox" id="french" />French</label>
+                <label><input type="checkbox" id="spanish" />Spanish</label>
+                <label><input type="checkbox" id="polish" />Polish</label>
+            </div>
+        </fieldset>
+    </form>
 </div>
 		
 
 <ul class="podcast-loop">
+    <li class="no-podcast-found">
+        <p>No podcast found :/</p>
+    </li>
+
     
-    <li class="podcast-loop__item js-filterable" data-category="trailultrasubultra">
+    <li class="podcast-loop__item" data-category="ultra trail business english ">
         <article>
             <header>
-                <p><img src="/media/neda-square.jpg" alt="Nå Er Det Alvor podcast logo" /></p>
+                <h2 class="podcast-loop__item__title">Singletrack</h2>
+                <p><img src="/media/singletrack.jpg" alt="Singletrack pocdast logo" /></p>
 
-                <p>Kategori: </p>
-                    <ul class="taglist">
+                
+                <p class="podcast-loop__item__description">Singletrack is a podcast covering the professional trail and ultrarunning scene.</p>
+                
+            </header>
+ 
+            <h3 class="podcast-loop__item__link-title">Listen to Singletrack:</h3>
+            
+            <ul class="podcast-loop__item__links">
+                
+                <li><a href="https://open.spotify.com/show/7jAsWCRNSCU8nh81vrAaC2" target="_blank" title="Singletrack på Spotify">Spotify</a></li>
+                
+                
+                <li><a href="https://podcasts.apple.com/us/podcast/id1572382413?mt=2&ls=1" target="_blank" title="https://podcasts.apple.com/us/podcast/id1572382413?mt=2&ls=1 på Apple Podcasts">Apple Podcasts</a></li>
+                
+                
+                <li><a href="https://www.youtube.com/c/SingletrackPodcast" target="_blank" title="https://www.youtube.com/c/SingletrackPodcast på Patreon">YouTube</a></li>
+                
+                
+                <li><a href="https://www.patreon.com/runsingletrack/" target="_blank" title="Singletrack på Patreon">Patreon</a></li>
+                
+            </ul>
+
+            <div class="podcast-loop__item__tags">
+                <div>
+                    <p class="podcast-loop__item__tag-title">Category:</p>
+                    <ul>
                         
-                        <li class="taglist__item"><button class="taglist__button js-filter" data-category="trail">trail</button></li>
+                        <li class="taglist__item">ultra</li>
                         
-                        <li class="taglist__item"><button class="taglist__button js-filter" data-category="ultra">ultra</button></li>
+                        <li class="taglist__item">trail</li>
                         
-                        <li class="taglist__item"><button class="taglist__button js-filter" data-category="subultra">subultra</button></li>
+                        <li class="taglist__item">business</li>
                         
                     </ul>
                 </div>
-                <h2>Nå Er Det Alvor</h2>
-                <p>En ultra-ekstremsport-løpe-klatre-friluftsliv-podcast. Langformat-samtaler med toppidrettsutøvere og mannen/kvinnen i gata. Produsert av Hans Kristian Smedsrød.</p>
+                
+                <div>
+                    <p class="podcast-loop__item__tag-title">Language:</p>
+                    <ul>
+                        
+                        <li class="taglist__item">english</button></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </article>
+    </li>
+    
+    <li class="podcast-loop__item" data-category="trail ultra subultra norwegian english ">
+        <article>
+            <header>
+                <h2 class="podcast-loop__item__title">Nå Er Det Alvor</h2>
+                <p><img src="/media/neda-square.jpg" alt="Nå Er Det Alvor podcast logo" /></p>
+
+                
+                <p class="podcast-loop__item__description">En ultra-ekstremsport-løpe-klatre-friluftsliv-podcast. Langformat-samtaler med toppidrettsutøvere og mannen/kvinnen i gata. Produsert av Hans Kristian Smedsrød.</p>
+                
             </header>
  
-            <h3>Lytt til Nå Er Det Alvor her:</h3>
-            <ul>
+            <h3 class="podcast-loop__item__link-title">Listen to Nå Er Det Alvor:</h3>
+            
+            <ul class="podcast-loop__item__links">
                 
                 <li><a href="https://open.spotify.com/show/1s8OvAXNcqRa6oncqakhdg?si=68f8a4a873994356" target="_blank" title="Nå Er Det Alvor på Spotify">Spotify</a></li>
                 
@@ -58,34 +130,107 @@
                 <li><a href="https://podcasts.apple.com/no/podcast/n%C3%A5-er-det-alvor/id1332829214" target="_blank" title="https://podcasts.apple.com/no/podcast/n%C3%A5-er-det-alvor/id1332829214 på Apple Podcasts">Apple Podcasts</a></li>
                 
                 
+                <li><a href="https://www.youtube.com/channel/UCInpGUkInQhfGXN8qq8sR9g" target="_blank" title="https://www.youtube.com/channel/UCInpGUkInQhfGXN8qq8sR9g på Patreon">YouTube</a></li>
+                
+                
                 <li><a href="https://www.patreon.com/nedaproject" target="_blank" title="Nå Er Det Alvor på Patreon">Patreon</a></li>
                 
             </ul>
-        </article>
-    </li>
-    
-    <li class="podcast-loop__item js-filterable" data-category="trackroadtrail">
-        <article>
-            <header>
-                <p><img src="/media/breakingmarathonlimits.jpg" alt="Breaking Marathon Limits logo" /></p>
 
-                <p>Kategori: </p>
-                    <ul class="taglist">
+            <div class="podcast-loop__item__tags">
+                <div>
+                    <p class="podcast-loop__item__tag-title">Category:</p>
+                    <ul>
                         
-                        <li class="taglist__item"><button class="taglist__button js-filter" data-category="track">track</button></li>
+                        <li class="taglist__item">trail</li>
                         
-                        <li class="taglist__item"><button class="taglist__button js-filter" data-category="road">road</button></li>
+                        <li class="taglist__item">ultra</li>
                         
-                        <li class="taglist__item"><button class="taglist__button js-filter" data-category="trail">trail</button></li>
+                        <li class="taglist__item">subultra</li>
                         
                     </ul>
                 </div>
-                <h2>Breaking Marathon Limits</h2>
-                <p>Breaking Marathon Limits sin podcast dyrker interessen og kjærligheten for idrett generelt og løping spesielt. Med podcasten ønsker vi å inspirere alle typer løpere, samt oppmuntre folk til å pushe sine egne grenser og ta ut sitt potensiale – uansett nivå. Det er, og vil alltid være, mange grenser å bryte! I denne podcasten møter vi mosjonister som gir innsikt i hvordan de får kabalen i hverdagen til å gå opp, og eliteutøvere som forteller om sin drivkraft, treningsfilosofi, oppturer og nedturer, samt deler gode, praktiske tips for både næringsliv og mosjonsidrett.</p>
+                
+                <div>
+                    <p class="podcast-loop__item__tag-title">Language:</p>
+                    <ul>
+                        
+                        <li class="taglist__item">norwegian</button></li>
+                        
+                        <li class="taglist__item">english</button></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </article>
+    </li>
+    
+    <li class="podcast-loop__item" data-category="ultra science trail english ">
+        <article>
+            <header>
+                <h2 class="podcast-loop__item__title">KoopCast</h2>
+                <p><img src="/media/koopcast.jpg" alt="KoopCast podcast" /></p>
+
+                
+                <p class="podcast-loop__item__description">Coach Jason Koop covers training, nutrition and recent happenings in the ultramarathon world.</p>
+                
             </header>
  
-            <h3>Lytt til Breaking Marathon Limits her:</h3>
-            <ul>
+            <h3 class="podcast-loop__item__link-title">Listen to KoopCast:</h3>
+            
+            <ul class="podcast-loop__item__links">
+                
+                <li><a href="https://open.spotify.com/show/4e9j6LTsJtyBHxrdgQuoWK?si=3cd94fe61a184361" target="_blank" title="KoopCast på Spotify">Spotify</a></li>
+                
+                
+                <li><a href="https://podcasts.apple.com/us/podcast/koopcast/id1489494447" target="_blank" title="https://podcasts.apple.com/us/podcast/koopcast/id1489494447 på Apple Podcasts">Apple Podcasts</a></li>
+                
+                
+                <li><a href="https://www.youtube.com/@koopcast" target="_blank" title="https://www.youtube.com/@koopcast på Patreon">YouTube</a></li>
+                
+                
+            </ul>
+
+            <div class="podcast-loop__item__tags">
+                <div>
+                    <p class="podcast-loop__item__tag-title">Category:</p>
+                    <ul>
+                        
+                        <li class="taglist__item">ultra</li>
+                        
+                        <li class="taglist__item">science</li>
+                        
+                        <li class="taglist__item">trail</li>
+                        
+                    </ul>
+                </div>
+                
+                <div>
+                    <p class="podcast-loop__item__tag-title">Language:</p>
+                    <ul>
+                        
+                        <li class="taglist__item">english</button></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </article>
+    </li>
+    
+    <li class="podcast-loop__item" data-category="track road trail norwegian ">
+        <article>
+            <header>
+                <h2 class="podcast-loop__item__title">Breaking Marathon Limits</h2>
+                <p><img src="/media/breakingmarathonlimits.jpg" alt="Breaking Marathon Limits logo" /></p>
+
+                
+                <p class="podcast-loop__item__description">Breaking Marathon Limits sin podcast dyrker interessen og kjærligheten for idrett generelt og løping spesielt. Med podcasten ønsker vi å inspirere alle typer løpere, samt oppmuntre folk til å pushe sine egne grenser og ta ut sitt potensiale – uansett nivå. Det er, og vil alltid være, mange grenser å bryte! I denne podcasten møter vi mosjonister som gir innsikt i hvordan de får kabalen i hverdagen til å gå opp, og eliteutøvere som forteller om sin drivkraft, treningsfilosofi, oppturer og nedturer, samt deler gode, praktiske tips for både næringsliv og mosjonsidrett.</p>
+                
+            </header>
+ 
+            <h3 class="podcast-loop__item__link-title">Listen to Breaking Marathon Limits:</h3>
+            
+            <ul class="podcast-loop__item__links">
                 
                 <li><a href="https://open.spotify.com/show/2H86c25anhVQ7YHbBQ0xDc?si=6b4a43f44ad7475f" target="_blank" title="Breaking Marathon Limits på Spotify">Spotify</a></li>
                 
@@ -93,23 +238,47 @@
                 <li><a href="https://open.spotify.com/show/2H86c25anhVQ7YHbBQ0xDc?si=6b4a43f44ad7475f" target="_blank" title="https://open.spotify.com/show/2H86c25anhVQ7YHbBQ0xDc?si=6b4a43f44ad7475f på Apple Podcasts">Apple Podcasts</a></li>
                 
                 
+                
                 <li><a href="https://www.patreon.com/breakingmarathonlimits/posts" target="_blank" title="Breaking Marathon Limits på Patreon">Patreon</a></li>
                 
             </ul>
+
+            <div class="podcast-loop__item__tags">
+                <div>
+                    <p class="podcast-loop__item__tag-title">Category:</p>
+                    <ul>
+                        
+                        <li class="taglist__item">track</li>
+                        
+                        <li class="taglist__item">road</li>
+                        
+                        <li class="taglist__item">trail</li>
+                        
+                    </ul>
+                </div>
+                
+                <div>
+                    <p class="podcast-loop__item__tag-title">Language:</p>
+                    <ul>
+                        
+                        <li class="taglist__item">norwegian</button></li>
+                        
+                    </ul>
+                </div>
+            </div>
         </article>
     </li>
     
 </ul>
 
-
 	</main>
 	
 <footer class="footer">
-    <p>Footer</p>
+    <p>A Nå Er Det Alvor Production | Contact: alvorpodcast@gmail.com </p>
 </footer>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-
+<script src=/assets/scripts/isotope.js></script>
 <script src=/assets/scripts/main.js></script>
 
 </body> 
