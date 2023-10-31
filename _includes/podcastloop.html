@@ -1,0 +1,15 @@
+{% for podcast in podcasts %}
+<li>
+    <article>
+        <header>
+           <h2>Nå Er Det Alvor</h2>
+           <p>En podcast om zzzzzz</p>
+        </header>
+        <img src="/media/cc0-images/elephant-660-480.jpg" alt="Elephant at sunset" />
+        <h3>Lytt til {{xxx}} her:</h3>
+        <ul>
+            <li><a href="{{podcast.spotify_link}}">Spotify</a></li>
+        </ul>
+    </article>
+</li>
+{% endfor %}

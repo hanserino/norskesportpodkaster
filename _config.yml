@@ -1,0 +1,78 @@
+baseurl: ''
+url: 'http://0.0.0.0:4000/'
+destination: docs
+email: alvorpodcast@gmail.com
+markdown: kramdown
+sass:
+  sass_dir: _style
+  style: compressed
+defaults:
+  - scope:
+      path: ''
+      type: posts
+    values:
+      published: 'true'
+collections:
+  - sponsors
+prose:
+  rooturl: _posts
+  media: media
+  siteurl: 'http://norskesportspodkaster.no'
+  relativeLinks: 'http://norskesportspodkaster.no/links.jsonp'
+  metadata:
+    _posts/podcasts:
+      - name: published
+        field:
+          element: hidden
+          value: 'true'
+      - name: category
+        field:
+          element: hidden
+          value: agenda
+      - name: category
+        field:
+          element: hidden
+          value: agenda
+      - name: title
+        field:
+          element: text
+          label: Event name
+          placeholder: Nå Er Det Alvor
+          value: ''
+      - name: spotify_link
+        field:
+          element: text
+          label: Link
+          placeholder: 'https://open.spotify.com/episode/xxxxx'
+          value: ''
+      - name: apple_podcast_link
+        field:
+          element: text
+          label: Link
+          placeholder: 'https://open.spotify.com/episode/xxxxx'
+          value: ''
+      - name: spotify_link
+        field:
+          element: text
+          label: Link
+          placeholder: >-
+            https://podcasts.apple.com/no/podcast/n%C3%A5-er-det-alvor/id1332829214
+          value: ''
+      - name: tags
+        field:
+          element: multiselect
+          label: Idrett
+          placeholder: Velg idrett
+          options:
+            - name: Langrenn
+              value: langrenn
+            - name: Løping
+              value: løping
+            - name: Klatring
+              value: klatring
+      - name: publisher
+        field:
+          element: text
+          label: Utgiver
+          placeholder: Schibsted
+          value: ''
