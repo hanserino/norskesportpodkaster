@@ -3,7 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Norske Sportspodkaster</title>
+<title>Curated Running Podcasts | A hand picked selection of running related podcasts worth listening to</title>
 
 <link rel="stylesheet" href="/assets/style/main.css">
 
@@ -11,10 +11,95 @@
 </head>
 
 <body>
-	<h1>Norske Sportspodkaster</h1>
+	<h1>Curated Running Podcasts | A hand picked selection of running related podcasts worth listening to</h1>
     <main>
-
+        <div id="filter">
+    <ul class="filters">
+        <li class="filters__item"><button class="filters__btn js-filter" data-category="all">All</button></li>
+        <li class="filters__item"><button class="filters__btn js-filter" data-category="trail">Trail</button></li>
+        <li class="filters__item"><button class="filters__btn js-filter" data-category="track">Track</button></li>
+        <li class="filters__item"><button class="filters__btn js-filter" data-category="ultra">Ultra</button></li>
+        <li class="filters__item"><button class="filters__btn js-filter" data-category="road">Road</button></li>
+        <li class="filters__item"><button class="filters__btn js-filter" data-category="subultra">Sub ultra</button></li>
+        <li class="filters__item"><button class="filters__btn js-filter" data-category="science">Science</button></li>
+        <li class="filters__item"><button class="filters__btn js-filter" data-category="business">Business</button></li>
+    </ul>
+</div>
 		
+
+<ul class="podcast-loop">
+    
+    <li class="podcast-loop__item js-filterable" data-category="trailultrasubultra">
+        <article>
+            <header>
+                <p><img src="/media/neda-square.jpg" alt="Nå Er Det Alvor podcast logo" /></p>
+
+                <p>Kategori: </p>
+                    <ul class="taglist">
+                        
+                        <li class="taglist__item"><button class="taglist__button js-filter" data-category="trail">trail</button></li>
+                        
+                        <li class="taglist__item"><button class="taglist__button js-filter" data-category="ultra">ultra</button></li>
+                        
+                        <li class="taglist__item"><button class="taglist__button js-filter" data-category="subultra">subultra</button></li>
+                        
+                    </ul>
+                </div>
+                <h2>Nå Er Det Alvor</h2>
+                <p>En ultra-ekstremsport-løpe-klatre-friluftsliv-podcast. Langformat-samtaler med toppidrettsutøvere og mannen/kvinnen i gata. Produsert av Hans Kristian Smedsrød.</p>
+            </header>
+ 
+            <h3>Lytt til Nå Er Det Alvor her:</h3>
+            <ul>
+                
+                <li><a href="https://open.spotify.com/show/1s8OvAXNcqRa6oncqakhdg?si=68f8a4a873994356" target="_blank" title="Nå Er Det Alvor på Spotify">Spotify</a></li>
+                
+                
+                <li><a href="https://podcasts.apple.com/no/podcast/n%C3%A5-er-det-alvor/id1332829214" target="_blank" title="https://podcasts.apple.com/no/podcast/n%C3%A5-er-det-alvor/id1332829214 på Apple Podcasts">Apple Podcasts</a></li>
+                
+                
+                <li><a href="https://www.patreon.com/nedaproject" target="_blank" title="Nå Er Det Alvor på Patreon">Patreon</a></li>
+                
+            </ul>
+        </article>
+    </li>
+    
+    <li class="podcast-loop__item js-filterable" data-category="trackroadtrail">
+        <article>
+            <header>
+                <p><img src="/media/breakingmarathonlimits.jpg" alt="Breaking Marathon Limits logo" /></p>
+
+                <p>Kategori: </p>
+                    <ul class="taglist">
+                        
+                        <li class="taglist__item"><button class="taglist__button js-filter" data-category="track">track</button></li>
+                        
+                        <li class="taglist__item"><button class="taglist__button js-filter" data-category="road">road</button></li>
+                        
+                        <li class="taglist__item"><button class="taglist__button js-filter" data-category="trail">trail</button></li>
+                        
+                    </ul>
+                </div>
+                <h2>Breaking Marathon Limits</h2>
+                <p>Breaking Marathon Limits sin podcast dyrker interessen og kjærligheten for idrett generelt og løping spesielt. Med podcasten ønsker vi å inspirere alle typer løpere, samt oppmuntre folk til å pushe sine egne grenser og ta ut sitt potensiale – uansett nivå. Det er, og vil alltid være, mange grenser å bryte! I denne podcasten møter vi mosjonister som gir innsikt i hvordan de får kabalen i hverdagen til å gå opp, og eliteutøvere som forteller om sin drivkraft, treningsfilosofi, oppturer og nedturer, samt deler gode, praktiske tips for både næringsliv og mosjonsidrett.</p>
+            </header>
+ 
+            <h3>Lytt til Breaking Marathon Limits her:</h3>
+            <ul>
+                
+                <li><a href="https://open.spotify.com/show/2H86c25anhVQ7YHbBQ0xDc?si=6b4a43f44ad7475f" target="_blank" title="Breaking Marathon Limits på Spotify">Spotify</a></li>
+                
+                
+                <li><a href="https://open.spotify.com/show/2H86c25anhVQ7YHbBQ0xDc?si=6b4a43f44ad7475f" target="_blank" title="https://open.spotify.com/show/2H86c25anhVQ7YHbBQ0xDc?si=6b4a43f44ad7475f på Apple Podcasts">Apple Podcasts</a></li>
+                
+                
+                <li><a href="https://www.patreon.com/breakingmarathonlimits/posts" target="_blank" title="Breaking Marathon Limits på Patreon">Patreon</a></li>
+                
+            </ul>
+        </article>
+    </li>
+    
+</ul>
 
 
 	</main>
@@ -22,6 +107,8 @@
 <footer class="footer">
     <p>Footer</p>
 </footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 <script src=/assets/scripts/main.js></script>
 

@@ -12,9 +12,23 @@ var isTouchDevice = function () {
 
   
 
-function init(){
-        
+function init(){}
+
+function filterPodcasts(category){
+   
+    if ( category == 'all' ) {
+        $( '.js-filterable' ).removeClass( 'is-hidden' ); 
+    } else {
+        $( '.js-filterable' ).addClass( 'is-hidden' );
+        $( '.js-filterable[data-category*=' + category + ']' ).removeClass( 'is-hidden' );
+    }
 }
+
+$( '.js-filter' ).on( 'click', function() {
+    let $category = $(this).attr('data-category');
+    filterPodcasts($category);
+});
+
 
 
 

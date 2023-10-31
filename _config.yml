@@ -30,7 +30,7 @@ prose:
       - name: title
         field:
           element: text
-          label: Navn
+          label: Name
           placeholder: Nå Er Det Alvor
           value: ''
       - name: spotify_link
@@ -54,22 +54,47 @@ prose:
       - name: tags
         field:
           element: multiselect
-          label: Idrett
-          placeholder: Velg idrett
+          label: Running type
+          placeholder: Choose type
           options:
-            - name: Langrenn
-              value: langrenn
-            - name: Løping
-              value: løping
-            - name: Klatring
-              value: klatring
-            - name: Friluftsliv
-              value: friluftsliv
-            - name: Fotball
-              value: fotball
+            - name: Track
+              value: track
+            - name: Sub ultra
+              value: subultra
+            - name: Ultra
+              value: ultra
+            - name: Skyrunning
+              value: skyrunning
+            - name: Science
+              value: science
+            - name: Business
+              value: business
+      - name: language
+        field:
+          element: multiselect
+          label: Language
+          placeholder: Choose type
+          options:
+            - name: Norwegian
+              value: norwegian
+            - name: English
+              value: english
+            - name: Polish
+              value: polish
+            - name: Italian
+              value: italian
+            - name: Frehch
+              value: french
       - name: publisher
         field:
           element: text
-          label: Utgiver
-          placeholder: Schibsted
+          label: Publisher
+          placeholder: NEDA
           value: ''
+      - name: description
+        field:
+          element: text
+          label: Beskrivelse
+          placeholder: ''
+          value: ''
+

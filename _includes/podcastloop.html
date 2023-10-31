@@ -1,15 +1,35 @@
-{% for podcast in podcasts %}
-<li>
-    <article>
-        <header>
-           <h2>Nå Er Det Alvor</h2>
-           <p>En podcast om zzzzzz</p>
-        </header>
-        <img src="/media/cc0-images/elephant-660-480.jpg" alt="Elephant at sunset" />
-        <h3>Lytt til {{xxx}} her:</h3>
-        <ul>
-            <li><a href="{{podcast.spotify_link}}">Spotify</a></li>
-        </ul>
-    </article>
-</li>
-{% endfor %}
+{% assign podcasts = site.categories.['podcast'] %}
+
+<ul class="podcast-loop">
+    {% for podcast in podcasts %}
+    <li class="podcast-loop__item js-filterable" data-category="{% for tag in podcast.tags %}{{ tag }}{% endfor %}">
+        <article>
+            <header>
+                {{ podcast.content }}
+                <p>Kategori: </p>
+                    <ul class="taglist">
+                        {% for tag in podcast.tags %}
+                        <li class="taglist__item"><button class="taglist__button js-filter" data-category="{{ tag }}">{{ tag }}</button></li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                <h2>{{ podcast.title }}</h2>
+                {% if podcast.description %}<p>{{ podcast.description }}</p>{% endif %}
+            </header>
+ 
+            <h3>Lytt til {{ podcast.title }} her:</h3>
+            <ul>
+                {% if podcast.spotify_link %}
+                <li><a href="{{podcast.spotify_link}}" target="_blank" title="{{ podcast.title }} på Spotify">Spotify</a></li>
+                {% endif %}
+                {% if podcast.apple_podcast_link %}
+                <li><a href="{{podcast.apple_podcast_link}}" target="_blank" title="{{ podcast.apple_podcast_link }} på Apple Podcasts">Apple Podcasts</a></li>
+                {% endif %}
+                {% if podcast.patreon_link %}
+                <li><a href="{{podcast.patreon_link}}" target="_blank" title="{{ podcast.title }} på Patreon">Patreon</a></li>
+                {% endif %}
+            </ul>
+        </article>
+    </li>
+    {% endfor %}
+</ul>

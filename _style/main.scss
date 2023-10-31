@@ -10,6 +10,8 @@
 // Partials -------------- //
 @import 'partials/typography';
 @import 'partials/header';
+@import 'partials/filter';
+@import 'partials/podcastloop';
 @import 'partials/footer';
 
 [data-touch="false"] .mobileOnly { 
@@ -49,7 +51,7 @@ body {
 
     @include allAbove(medium){
    
-    }
+    } 
 }
 
 

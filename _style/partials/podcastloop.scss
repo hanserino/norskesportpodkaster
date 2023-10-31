@@ -1,0 +1,28 @@
+.podcast-loop {
+    display: flex;
+
+
+    &__item {
+        border: 1px solid;
+        width: 50%;
+        padding: .25rem;
+        list-style: none;
+
+        @include allAbove(medium){
+            width: 25%;
+        }
+    }
+
+    article{}
+    h3 {}
+    ul {}
+    li {}
+    a {}
+    img {
+        width: 100%;
+    }
+}
+
+.taglist__item~.taglist__item::before {
+    content: ", ";
+}

@@ -1,0 +1,17 @@
+#filter{
+    border: 1px solid;
+}
+
+.filters {
+    display: flex;
+    list-style: none;
+}
+
+.filters__item{
+    margin: .25rem;
+    padding: .5rem;
+}
+
+.is-hidden {
+    display: none;
+}
