@@ -26,35 +26,30 @@ prose:
       - name: category
         field:
           element: hidden
-          value: agenda
-      - name: category
-        field:
-          element: hidden
-          value: agenda
+          value: podcast
       - name: title
         field:
           element: text
-          label: Event name
+          label: Navn
           placeholder: Nå Er Det Alvor
           value: ''
       - name: spotify_link
         field:
           element: text
-          label: Link
+          label: Spotify Link
           placeholder: 'https://open.spotify.com/episode/xxxxx'
           value: ''
       - name: apple_podcast_link
         field:
           element: text
-          label: Link
+          label: Apple Podcasts Link
           placeholder: 'https://open.spotify.com/episode/xxxxx'
           value: ''
-      - name: spotify_link
+      - name: patreon_link
         field:
           element: text
-          label: Link
-          placeholder: >-
-            https://podcasts.apple.com/no/podcast/n%C3%A5-er-det-alvor/id1332829214
+          label: Patreon Link
+          placeholder: 'https://www.patreon.com/nedaproject'
           value: ''
       - name: tags
         field:
@@ -68,6 +63,10 @@ prose:
               value: løping
             - name: Klatring
               value: klatring
+            - name: Friluftsliv
+              value: friluftsliv
+            - name: Fotball
+              value: fotball
       - name: publisher
         field:
           element: text
