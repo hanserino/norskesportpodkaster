@@ -14,6 +14,6 @@ language:
   - norwegian
   - english
 publisher: NEDA
-description: En ultra-ekstremsport-løpe-klatre-friluftsliv-podcast. Langformat-samtaler med toppidrettsutøvere og mannen/kvinnen i gata. Produsert av Hans Kristian Smedsrød.
+description: A podcast mostly about ultrarunning, but also climbing, alpinism, outdoor sports and other ultra endurance activities. Mostly in Norwegian, sometimes in English.
 ---
 ![Nå Er Det Alvor podcast logo]({{site.baseurl}}/media/neda-square.jpg)

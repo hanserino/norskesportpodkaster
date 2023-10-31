@@ -10,7 +10,7 @@ description: >-
   meditation, endurance sports and much much more. 
 publisher: Ellen och Johnny
 language:
-  - norwegian
+  - swedish
 tags:
   - ultra
 ---
