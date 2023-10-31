@@ -11,4 +11,5 @@ tags:
   - friluftsliv
 publisher: NEDA
 ---
+![Nå Er Det Alvor podcast logo]({{site.baseurl}}/media/neda-square.jpg)
 En ultra-ekstremsport-løpe-klatre-friluftsliv-podcast. Langformat-samtaler med toppidrettsutøvere og mannen/kvinnen i gata. Produsert av Hans Kristian Smedsrød.
