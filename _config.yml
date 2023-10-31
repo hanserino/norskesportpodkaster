@@ -12,8 +12,6 @@ defaults:
       type: posts
     values:
       published: 'true'
-collections:
-  - sponsors
 prose:
   rooturl: _posts
   media: media
