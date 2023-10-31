@@ -79,11 +79,13 @@ prose:
               value: norwegian
             - name: English
               value: english
+            - name: Swedish
+              value: swedish
             - name: Polish
               value: polish
             - name: Italian
               value: italian
-            - name: Frehch
+            - name: French
               value: french
       - name: publisher
         field:
