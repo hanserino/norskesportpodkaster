@@ -59,6 +59,8 @@ prose:
           options:
             - name: Track
               value: track
+            - name: Trail
+              value: trail
             - name: Sub ultra
               value: subultra
             - name: Ultra
